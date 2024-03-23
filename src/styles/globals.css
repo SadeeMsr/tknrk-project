@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Russo+One&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.font_russo {
+  font-family: "Russo One", sans-serif;
+}
+
+.ul_hover_effect {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+  color: black;
+  line-height: 24px;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+}
+
+.ul_hover_effect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(214, 93, 49);
+  transition: width 0.5s ease-out;
+}
+.ul_hover_effect:hover::before {
+  width: 100%;
+}
+
+.swiper-pagination {
+  text-align: end !important;
+  padding-right: 3.5rem;
+  margin-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(240, 131, 63) !important;
+}
