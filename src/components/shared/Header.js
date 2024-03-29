@@ -10,7 +10,7 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Link from "next/link";
-import { AcmeLogo } from "./AcmeLogo";
+import { AcmeLogo, Logo } from "./Logo";
 import { menuItems } from "@/data/navbarLinks";
 
 export default function Header() {
@@ -29,8 +29,11 @@ export default function Header() {
           className="lg:hidden"
         />
         <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit uppercase text-red-500">tknrk</p>
+          <div className="scale-[0.9]">
+          <Logo windowFill="#000000" />
+
+          </div>
+          <p className="font-bold text-inherit uppercase text-red-600">tknrk</p>
         </NavbarBrand>
       </NavbarContent>
 

@@ -1,5 +1,8 @@
+import Clients from "@/components/home/Clients";
 import HeroBgCarousel from "@/components/home/HeroBgCarousel";
 import LatestProjects from "@/components/home/LatestProjects";
+import News from "@/components/home/News";
+import OurClients from "@/components/home/OurClients";
 import WhatWeDo from "@/components/home/WhatWeDo";
 
 const carouselImg = [
@@ -59,7 +62,6 @@ const whatWeDoGridTexts = [
   },
 ];
 
-
 const latestProjects = [
   {
     id: 1,
@@ -101,13 +103,18 @@ const latestProjects = [
 
 export default function Home() {
   return (
-    <div className="mx-8">
-      <HeroBgCarousel
-        carouselImg={carouselImg}
-        placeholderTexts={placeholderTexts}
-      />
-      <WhatWeDo whatWeDoGridTexts={whatWeDoGridTexts} />
-      <LatestProjects latestProjects={latestProjects} />
-    </div>
+    <>
+      <div className="mx-8">
+        <HeroBgCarousel
+          carouselImg={carouselImg}
+          placeholderTexts={placeholderTexts}
+        />
+        <WhatWeDo whatWeDoGridTexts={whatWeDoGridTexts} />
+        <LatestProjects latestProjects={latestProjects} />
+      </div>
+      <News />
+      <Clients />
+      <OurClients />
+    </>
   );
 }
