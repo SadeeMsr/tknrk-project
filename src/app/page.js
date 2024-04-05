@@ -4,6 +4,7 @@ import LatestProjects from "@/components/home/LatestProjects";
 import News from "@/components/home/News";
 import OurClients from "@/components/home/OurClients";
 import WhatWeDo from "@/components/home/WhatWeDo";
+import ProjectCard from "@/components/shared/ProjectCard";
 
 const carouselImg = [
   {
@@ -67,54 +68,54 @@ const latestProjects = [
     id: 1,
     title: "Need title here",
     subtitle: "Subtitle",
-    imgPath: "/assets/hero-images/image-02.jpg",
+    imgPath: "/assets/latest-projects/image-01.jpg",
   },
   {
     id: 2,
     title: "Need title here",
     subtitle: "Subtitle",
-    imgPath: "/assets/hero-images/image-02.jpg",
+    imgPath: "/assets/latest-projects/image-02.jpg",
   },
   {
     id: 3,
     title: "Need title here",
     subtitle: "Subtitle",
-    imgPath: "/assets/hero-images/image-02.jpg",
+    imgPath: "/assets/latest-projects/image-03.jpg",
   },
   {
     id: 4,
     title: "Need title here",
     subtitle: "Subtitle",
-    imgPath: "/assets/hero-images/image-02.jpg",
+    imgPath: "/assets/latest-projects/image-04.png",
   },
   {
     id: 5,
     title: "Need title here",
     subtitle: "Subtitle",
-    imgPath: "/assets/hero-images/image-02.jpg",
+    imgPath: "/assets/latest-projects/image-05.jpg",
   },
   {
     id: 6,
     title: "Need title here",
     subtitle: "Subtitle",
-    imgPath: "/assets/hero-images/image-02.jpg",
+    imgPath: "/assets/latest-projects/image-06.JPG",
   },
 ];
 
 export default function Home() {
   return (
     <>
-      <div className="mx-8">
         <HeroBgCarousel
           carouselImg={carouselImg}
           placeholderTexts={placeholderTexts}
         />
+      <OurClients />
+      <div className="mx-8">
         <WhatWeDo whatWeDoGridTexts={whatWeDoGridTexts} />
         <LatestProjects latestProjects={latestProjects} />
       </div>
       <News />
       <Clients />
-      <OurClients />
     </>
   );
 }

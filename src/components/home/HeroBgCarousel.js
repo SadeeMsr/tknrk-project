@@ -40,7 +40,7 @@ export default function HeroBgCarousel({ carouselImg, placeholderTexts }) {
   }
 
   return (
-    <div className="rounded-xl overflow-hidden">
+    <div className=" overflow-hidden">
       <div className="relative lg:ms-32 ms-8">
         <div
           className="lg:w-[55%] w-full absolute flex flex-col h-screen justify-center"

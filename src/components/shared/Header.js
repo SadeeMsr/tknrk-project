@@ -29,11 +29,11 @@ export default function Header() {
           className="lg:hidden"
         />
         <NavbarBrand>
-          <div className="scale-[0.9]">
+          <div className="scale-[0.8]">
           <Logo windowFill="#000000" />
 
           </div>
-          <p className="font-bold text-inherit uppercase text-red-600">tknrk</p>
+          <p className="font-bold text-2xl text-inherit uppercase text-red-600">tknrk</p>
         </NavbarBrand>
       </NavbarContent>
 
@@ -41,7 +41,7 @@ export default function Header() {
         {menuItems.map((item) => (
           <NavbarItem key={item.id} className="hidden lg:flex">
             <Link
-              className="pe-3 font-light ul_hover_effect"
+              className="pe-3 text-md font-light ul_hover_effect"
               href="#"
               size="lg"
             >
